@@ -146,7 +146,7 @@ img {
   height: auto;
 }
 
-/* -------------------------------------- */
+/* header start --------------------------- */
 .header {
   position: fixed;
   top: 0;
@@ -212,7 +212,7 @@ img {
   opacity: 0.75;
 }
 
-/* main */
+/*  main start ----------------------------- */
 
 .intro {
   min-height: 100vh;
@@ -309,7 +309,6 @@ img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 55px;
-  /* padding: 35px 100px 110px; */
   padding: 0 100px;
   margin-bottom: 112px;
 }
@@ -319,7 +318,6 @@ img {
 }
 
 .benefits__card-pic {
-  /* max-width: 66px; */
   margin-bottom: 37px;
 }
 
@@ -339,21 +337,19 @@ img {
 .benefits__card-desc {
   color: #000;
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px; /* 150% */
   max-width: 300px;
   margin-bottom: 39px;
 }
 
 .benefits__card-more {
-  display: inline-block;
-  padding-right: 59px;
-  color: #006dfe;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
+  color: #006dfe;
   text-decoration: none;
+  padding-right: 59px;
   background: url(../img/Shape.svg) no-repeat 95% center;
+  display: inline-block;
+  line-height: 24px; /* 150% */
   transition: 0.3s all;
 }
 
@@ -451,4 +447,51 @@ img {
 .places__card-pic-sm {
   height: 283px;
   object-fit: cover;
+}
+
+/* Tours sryle start ----------------------------- */
+
+.tours {
+  margin-bottom: 139px;
+}
+
+.tuor__info {
+  padding-left: 45px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.tour__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 85px;
+}
+
+.tour__desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.tour__more {
+  font-size: 16px;
+  color: #006dfe;
+  text-decoration: none;
+  padding-right: 59px;
+  background: url(../img/Shape.svg) no-repeat 95% center;
+}
+
+.tour__more:hover,
+.tour__more:active,
+.tour__more:focus {
+  opacity: 0.65;
+  background: url(../img/Shape.svg) no-repeat right center;
+  transition: 0.3s all;
 }
